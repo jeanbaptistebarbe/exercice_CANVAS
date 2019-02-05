@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 3</title>
+  </head>
+<body>
+  <canvas id="maison" width="400" height="400">
+<script>
+var c = document.getElementById("maison");
+var ctx = c.getContext("2d");
+
+// Fond voiture
+ctx.fillStyle = "#00aa4b";
+ctx.fillRect(80,100,300,100);
+ctx.fillRect(150,50,200,100);
+// Fenetre voiture
+ctx.fillStyle = "blue";
+ctx.fillRect(170,60,60,60);
+ctx.fillRect(260,60,60,60);
+ctx.fillRect(150,50,10,50);
+//deco
+ctx.fillStyle = "black";
+ctx.fillRect(80,170,300,10);
+ctx.fillRect(80,150,300,10);
+ctx.fillStyle = "grey";
+ctx.fillRect(370,180,40,10);
+// roues
+ctx.beginPath();
+ctx.arc(360,230,30,0,Math.PI*2,false);
+ctx.stroke();
+ctx.fill();
+ctx.fillStyle = "grey";
+ctx.beginPath();
+ctx.arc(125,230,30,0,Math.PI*2,false);
+ctx.stroke();
+ctx.fill();
+ctx.fillStyle = "grey";
+</script>
+</canvas>
+</body>
+</html>

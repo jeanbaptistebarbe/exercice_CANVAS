@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+  </head>
+<body>
+  <canvas id="maison" width="400" height="400">
+<script>
+var c = document.getElementById("maison");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(200,50);
+ctx.lineTo(300,150);
+ctx.lineTo(100,150);
+ctx.fillStyle = "peru";
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(100,150);
+ctx.lineTo(100,350);
+ctx.lineTo(300,350);
+ctx.lineTo(300,150);
+ctx.fillStyle = "lightblue";
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(125,165);
+ctx.lineTo(125,205);
+ctx.lineTo(165,205);
+ctx.lineTo(165,165);
+ctx.fillStyle = "#C9C9C9";
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(235,165);
+ctx.lineTo(235,205);
+ctx.lineTo(275,205);
+ctx.lineTo(275,165);
+ctx.fillStyle = "#C9C9C9";
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(175,250);
+ctx.lineTo(175,350);
+ctx.lineTo(235,350);
+ctx.lineTo(235,250);
+ctx.fillStyle = "#C9C9C9";
+ctx.fill();
+ctx.closePath();
+</script>
+</canvas>
+</body>
+</html>

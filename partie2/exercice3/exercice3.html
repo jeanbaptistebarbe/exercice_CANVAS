@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 3</title>
+  </head>
+<body>
+  <canvas id="pain" width="400" height="400">
+<script>
+var c = document.getElementById("pain");
+var ctx = c.getContext("2d");
+ctx.lineWidth = 1;
+//fond
+ctx.fillStyle = "white";
+ctx.fillRect(0,0,400,400);
+
+//corps
+ctx.beginPath();
+ctx.moveTo(200,130);
+ctx.lineTo(200,250);
+ctx.lineWidth = 70;
+ctx.stroke();
+ctx.strokeStyle = "peru";
+ctx.lineCap = "round"
+
+//bras gauche
+ctx.beginPath();
+ctx.moveTo(200,130);
+ctx.lineTo(100,130);
+ctx.lineWidth = 30;
+ctx.stroke();
+ctx.strokeStyle = "peru";
+ctx.lineCap = "round"
+
+//bras droit
+ctx.beginPath();
+ctx.moveTo(200,130);
+ctx.lineTo(300,130);
+ctx.lineWidth = 30;
+ctx.stroke();
+ctx.strokeStyle = "peru";
+ctx.lineCap = "round"
+//jambes
+ctx.beginPath();
+ctx.moveTo(220,140);
+ctx.lineTo(220,300);
+ctx.lineWidth = 30;
+ctx.stroke();
+ctx.strokeStyle = "peru";
+ctx.lineCap = "round"
+ctx.beginPath();
+ctx.moveTo(180,140);
+ctx.lineTo(180,300);
+ctx.lineWidth = 30;
+ctx.stroke();
+ctx.strokeStyle = "peru";
+ctx.lineCap = "round"
+//tete
+ctx.beginPath();
+ctx.arc(200,90,40,0,Math.PI*2,true);
+ctx.fillStyle = "peru";
+ctx.fill();
+//yeux
+ctx.beginPath();
+ctx.fillStyle="white";
+ctx.arc(180,80,8,0,Math.PI*2,false);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(220,80,8,0,Math.PI*2,false);
+ctx.fill();
+//sourcils
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.moveTo(165,80);
+ctx.quadraticCurveTo(190,55,195,80);
+ctx.strokeStyle="white";
+ctx.stroke();
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.moveTo(205,80);
+ctx.quadraticCurveTo(210,55,235,80);
+ctx.strokeStyle="white";
+ctx.stroke();
+// Bouche
+ctx.beginPath();
+ctx.arc(200,100,10,0,Math.PI,false);
+ctx.strokeStyle = "red";
+ctx.stroke();
+//boutons
+ctx.beginPath();
+ctx.fillStyle="purple";
+ctx.arc(200,160,8,0,Math.PI*2,false);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(200,190,8,0,Math.PI*2,false);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(200,220,8,0,Math.PI*2,false);
+ctx.fill();
+</script>
+</canvas>
+</body>
+</html>

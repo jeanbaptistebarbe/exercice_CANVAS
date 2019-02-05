@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 2</title>
+</head>
+<body>
+  <canvas id="alien" width="400" height="400">
+    <script>
+    var c = document.getElementById("alien");
+    var ctx = c.getContext("2d");
+    //fond
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0,0,400,400);
+
+    //bulle
+    ctx.beginPath();
+    ctx.lineWidth="3";
+    ctx.strokeStyle="white";
+    ctx.moveTo(240,160);
+    ctx.quadraticCurveTo(190,50,160,160);
+    ctx.fillStyle="white";
+    ctx.stroke();
+    ctx.fill();
+
+    //bas
+    ctx.beginPath();
+    ctx.lineWidth="3";
+    ctx.strokeStyle="grey";
+    ctx.moveTo(350,200);
+    ctx.quadraticCurveTo(200,300,50,200);
+    ctx.fillStyle="grey";
+    ctx.stroke();
+    ctx.fill();
+
+    //haut
+    ctx.beginPath();
+    ctx.lineWidth="3";
+    ctx.strokeStyle="grey";
+    ctx.moveTo(350,200);
+    ctx.quadraticCurveTo(200,100,50,200);
+    ctx.fillStyle="grey";
+    ctx.stroke();
+    ctx.fill();
+  </script>
+</canvas>
+</body>
+</html>

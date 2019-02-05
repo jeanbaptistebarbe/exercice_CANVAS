@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 2</title>
+  </head>
+<body>
+  <canvas id="maison" width="400" height="400">
+<script>
+var c = document.getElementById("maison");
+var ctx = c.getContext("2d");
+
+// Fond maison
+ctx.fillStyle = "#a0d7e6";
+ctx.fillRect(50,50,250,250);
+
+// porte
+ctx.fillStyle = "#c9c9c9";
+ctx.fillRect(150,200,50,50);
+ctx.fillRect(150,250,50,50);
+
+// fenetre
+ctx.fillStyle = "#c9c9c9";
+ctx.fillRect(100,100,50,50);
+ctx.fillRect(200,100,50,50);
+
+// toit
+ctx.fillStyle = "#d88437";
+ctx.fillRect(150,0,50,75);
+ctx.fillRect(100,25,50,50);
+ctx.fillRect(50,50,50,25);
+ctx.fillRect(200,25,50,50);
+ctx.fillRect(250,50,50,25);
+
+// soleil
+ctx.fillStyle = "yellow";
+ctx.fillRect(350,0,50,50);
+
+</script>
+</canvas>
+</body>
+</html>
